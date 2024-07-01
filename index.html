@@ -97,6 +97,7 @@
         
         main.addEventListener("click",(e)=>{
         e.preventDefault();
+            if(e.target.classlist.contains("deletebtn") {
         let valu=e.target;
             const item=valu.previousElementSibling.innerHTML;
             todo=todo.filter((cur)=>{
@@ -107,6 +108,7 @@
      
       parent.remove();
       localStorage.setItem("list",JSON.stringify(todo));
+            }
       });
       
       for (let each of todo) {
